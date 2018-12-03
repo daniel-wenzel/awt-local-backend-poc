@@ -1,0 +1,18 @@
+<script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+<script src="prepareManifest.js"></script>
+<style>
+  video {
+    width: 640px;
+    height: 360px;
+  }
+</style>
+
+<body>
+  <div>
+    <div><video id="videoPlayer" controls></video></div>
+  </div>
+  <script>
+    var player = dashjs.MediaPlayer().create();
+    player.initialize(document.querySelector("#videoPlayer"));
+  </script>
+</body>
